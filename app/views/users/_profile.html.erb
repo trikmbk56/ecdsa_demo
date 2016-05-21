@@ -1,0 +1,17 @@
+<div class="col-md-4" align="center">
+  <%= gravatar_for user %>
+</div>
+<div class="col-md-8">
+  <table class="table table-user-information">
+    <tbody>
+      <tr>
+        <td>Tên</td>
+        <td><b><%= user.name %></b></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><b><%= user.email %></b></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

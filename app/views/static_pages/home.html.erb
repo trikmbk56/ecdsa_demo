@@ -2,5 +2,11 @@
   <h1>Chữ ký số trên đường cong elliptic</h1>
   <img src="assets/dsa.png" alt="dsa">
   <br>
-  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+  <% if user_signed_in? %>
+    <%= link_to "Xin chào #{current_user.name}!", user_path(current_user),
+      class: "btn btn-lg btn-success" %>
+  <% else %>
+    <%= link_to "Đăng ký ngay!", new_user_registration_path,
+      class: "btn btn-lg btn-primary" %>
+  <% end %>
 </div>
