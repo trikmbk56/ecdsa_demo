@@ -1,6 +1,6 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to image_tag(image_path("logo.png"), alt: "error", id: "logo"), root_path %>
+    <%= link_to image_tag(image_path("icon.png"), alt: "error", id: "logo"), root_path %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Trang Chủ", root_path %></li>
@@ -11,7 +11,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "Hồ sơ", user_path(current_user) %></li>
-              <li><%= link_to "Thiết lập", edit_user_registration_path %></li>
+              <li><%= link_to "Cài đặt", edit_user_registration_path %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to "Đăng xuất", destroy_user_session_path,
