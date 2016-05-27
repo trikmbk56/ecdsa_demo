@@ -1,0 +1,38 @@
+<h2 class="title">2. Tạo chữ ký</h2>
+<form>
+  <fieldset class="form-group">
+    <label for="message">Thông điệp sẽ được ký</label>
+    <textarea rows="4" class="form-control" id="message" 
+    placeholder="Nội dung ..."></textarea>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="hash-function">Chọn hàm băm</label>
+    <select name="hash-function" class="form-control" id="hash-function">
+      <option value="sha1">SHA-1</option>
+      <option value="sha224">SHA-224</option>
+      <option value="sha256">SHA-256</option>
+      <option value="sha384">SHA-384</option>
+      <option value="sha512">SHA-512</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <center>
+      <button type="button" class="btn btn-primary btn-submit"
+      id="btn-gen-signature">Tạo chữ ký</button>
+    </center>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="hash-img">Mã băm (hex)</label>
+    <textarea readonly rows="3" class="form-control" id="hash-img" 
+    placeholder="Giá trị mã băm"></textarea>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="signature">Chữ ký (hex)</label>
+    <textarea readonly rows="3" class="form-control" id="signature" 
+    placeholder="Giá trị chữ ký"></textarea>
+  </fieldset>
+</form>

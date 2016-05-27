@@ -1,0 +1,35 @@
+.row {
+  .normal {
+    height: 695px;
+    background-color: #EEEEEE;
+    border: 1px solid blue;
+  }
+  .title {
+    border: 2px solid blue;
+    padding: 5px;
+  }
+  h2 {
+    color: blue;
+  }
+  form {
+    margin-top: 50px;
+    .form-group {
+      .btn-submit {
+        width: 60%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+    }
+    center {
+      #success-mess {
+        display: none;
+      }
+      #danger-mess {
+        display: none;
+      }
+    }
+    .private-key {
+      margin-top: 150px;
+    }
+  }
+}
