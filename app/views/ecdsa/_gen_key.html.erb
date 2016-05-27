@@ -1,0 +1,33 @@
+<h2 class="title">1. Sinh khóa</h2>
+<form>
+  <fieldset class="form-group">
+    <label for="elliptic">Chọn đường cong elliptic</label>
+    <select name="ec-name" class="form-control" id="elliptic">
+      <option value="secp224r1">NIST/SECG curve over a 224 bit prime field</option>
+      <option value="secp384r1">NIST/SECG curve over a 384 bit prime field</option>
+      <option value="secp521r1">NIST/SECG curve over a 521 bit prime field</option>
+      <option value="prime192v3">X9.62 curve over a 192 bit prime field</option>
+      <option value="prime239v3">X9.62 curve over a 239 bit prime field</option>
+      <option value="prime256v1">X9.62 curve over a 256 bit prime field</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <center>
+      <button type="button" class="btn btn-primary btn-submit"
+      id="btn-gen-key">Tạo khóa</button>
+    </center>
+  </fieldset>
+
+  <fieldset class="form-group private-key">
+    <label for="private-key">Khóa bí mật (hex)</label>
+    <textarea readonly rows="3" class="form-control" id="private-key" 
+    placeholder="Giá trị khóa bí mật"></textarea>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="public-key">Khóa công khai (hex)</label>
+    <textarea readonly rows="3" class="form-control" id="public-key" 
+    placeholder="Giá trị khóa công khai"></textarea>
+  </fieldset>
+</form>
